@@ -1,31 +1,31 @@
 body {
-	background: black;
+	background-color: black;
+	font-family: "Libre Baskerville", serif;
 }
-/* * {
-	border: 1px dashed red;
-	min-height: 10px;
-} */
 .postcard {
-	background: white;
+	background-color: white;
 	width: 400px;
 	height: 300px;
 	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
 }
 .postcard-header {
 	display: flex;
-}
-.postcard-body {
-	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	margin: 4%;
 }
 .postcard-header h1 {
-	width: 350px;
-	vertical-align: middle;
 	font-size: x-large;
-	margin: 0;
 }
 .postcard-header img {
 	width: 50px;
 	height: 50px;
+}
+.postcard-body {
+	display: flex;
 }
 .no-margin {
 	margin-top: 0;
@@ -45,7 +45,5 @@ input {
 button {
 	background-color: rgb(150, 150, 150);
 	padding: 5px;
-}
-body {
-	font-family: "Libre Baskerville", serif;
+	margin: 20px;
 }
